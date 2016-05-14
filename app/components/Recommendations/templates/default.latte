@@ -3,13 +3,15 @@
         <tr>
             <th></th>
             <th>Title</th>
+            <th class="text-center">Score</th>
         </tr>
     </thead>
     <tbody>
-        {foreach $recommendations as $article}
+        {foreach $recommendations as $candidate}
             <tr>
                 <td>#{$iterator->getCounter()}</td>
-                <td>{$article->title}</td>
+                <td>{$candidate->getArticle()->getTitle()}</td>
+                <td class="text-center">{$candidate->getScore($similarityWeight, $ratingWeight)}</td>
             </tr>
         {/foreach}
     </tbody>

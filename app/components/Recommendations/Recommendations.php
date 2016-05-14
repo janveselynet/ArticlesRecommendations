@@ -36,6 +36,8 @@ class Recommendations extends Control
 			$ratingWeight,
 			$recommendationsCount
 		);
+		$this->template->similarityWeight = $similarityWeight;
+		$this->template->ratingWeight = $ratingWeight;
 		$this->template->setFile(__DIR__ . '/templates/default.latte');
 		$this->template->render();
 	}

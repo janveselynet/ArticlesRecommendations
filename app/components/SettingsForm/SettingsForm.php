@@ -81,7 +81,7 @@ class SettingsForm extends Control
 	private function getArticlesForSelect()
 	{
 		$selectItems = [];
-		foreach ($this->articleRepository->getAll() as $article) {
+		foreach ($this->articleRepository->findAll() as $article) {
 			$selectItems[$article->getId()] = $article->getTitle();
 		}
 		return $selectItems;

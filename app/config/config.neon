@@ -26,5 +26,6 @@ services:
 	- App\Components\Recommendations\IRecommendationsFactory
 
 	- App\Model\ArticleRepository
+	- App\Model\RatingRepository
 	- App\Model\ArticleFactory
 	- App\Model\Recommender
