@@ -1,0 +1,16 @@
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Title</th>
+        </tr>
+    </thead>
+    <tbody>
+        {foreach $recommendations as $article}
+            <tr>
+                <td>#{$iterator->getCounter()}</td>
+                <td>{$article->title}</td>
+            </tr>
+        {/foreach}
+    </tbody>
+</table>

@@ -20,3 +20,11 @@ session:
 
 services:
 	router: App\RouterFactory::createRouter
+	- Nextras\Dbal\Connection(%database%)
+
+	- App\Components\SettingsForm\ISettingsFormFactory
+	- App\Components\Recommendations\IRecommendationsFactory
+
+	- App\Model\ArticleRepository
+	- App\Model\ArticleFactory
+	- App\Model\Recommender

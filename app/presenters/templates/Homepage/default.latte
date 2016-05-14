@@ -1,1 +1,6 @@
 {block content}
+{control settingsForm}
+<hr>
+{if $article !== NULL}
+    {control recommendations, $article, $similarityWeight, $ratingWeight, $recommendationsCount}
+{/if}

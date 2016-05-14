@@ -1,0 +1,34 @@
+{form form}
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="form-group">
+                {label article/}
+                {input article, class => 'form-control'}
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="form-group">
+                {label similarityWeight/}
+                {input similarityWeight, class => 'form-control'}
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="form-group">
+                {label ratingWeight/}
+                {input ratingWeight, class => 'form-control'}
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="form-group">
+                {label recommendationsCount/}
+                {input recommendationsCount, class => 'form-control'}
+            </div>
+        </div>
+        <div class="col-sm-2">
+            <div class="form-group">
+                <label>&nbsp;</label> <br>
+                {input submit, class => 'btn btn-primary'}
+            </div>
+        </div>
+    </div>
+{/form}
