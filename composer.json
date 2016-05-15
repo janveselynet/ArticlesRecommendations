@@ -16,7 +16,7 @@
 		"nette/utils": "^2.3",
 		"latte/latte": "^2.3",
 		"tracy/tracy": "^2.3",
-		"nextras/dbal": "^2.0"
+		"dibi/dibi": "^3.0"
 	},
 	"require-dev": {
 		"nette/tester": "^1.6"

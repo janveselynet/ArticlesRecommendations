@@ -4,9 +4,76 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ab528544f3b5a4c3f6acd8bff8c08bc8",
-    "content-hash": "994d644dc1eca2d4e705225e5550616f",
+    "hash": "3d74351bc194c2a4216c9ff3381caac7",
+    "content-hash": "157cb5cc79027d1b156f6a9553b4245f",
     "packages": [
+        {
+            "name": "dibi/dibi",
+            "version": "v3.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dg/dibi.git",
+                "reference": "4e838fc2b5cc1eca5425e6a0c70490bd67cef596"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dg/dibi/zipball/4e838fc2b5cc1eca5425e6a0c70490bd67cef596",
+                "reference": "4e838fc2b5cc1eca5425e6a0c70490bd67cef596",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.4"
+            },
+            "replace": {
+                "dg/dibi": "self.version"
+            },
+            "require-dev": {
+                "nette/tester": "~1.3",
+                "tracy/tracy": "~2.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "3.0-dev"
+                }
+            },
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ],
+                "files": [
+                    "src/loader.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause",
+                "GPL-2.0",
+                "GPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "David Grudl",
+                    "homepage": "https://davidgrudl.com"
+                }
+            ],
+            "description": "Dibi is Database Abstraction Library for PHP",
+            "homepage": "https://dibiphp.com",
+            "keywords": [
+                "access",
+                "database",
+                "dbal",
+                "mssql",
+                "mysql",
+                "odbc",
+                "oracle",
+                "pdo",
+                "postgresql",
+                "sqlite",
+                "sqlsrv"
+            ],
+            "time": "2016-04-06 17:09:24"
+        },
         {
             "name": "latte/latte",
             "version": "v2.3.11",
@@ -981,63 +1048,6 @@
             "description": "Nette Utility Classes",
             "homepage": "https://nette.org",
             "time": "2016-03-18 17:36:54"
-        },
-        {
-            "name": "nextras/dbal",
-            "version": "v2.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nextras/dbal.git",
-                "reference": "347e3fc811570fdb5be9057e76c72fa469cc1c56"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nextras/dbal/zipball/347e3fc811570fdb5be9057e76c72fa469cc1c56",
-                "reference": "347e3fc811570fdb5be9057e76c72fa469cc1c56",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.5"
-            },
-            "require-dev": {
-                "mockery/mockery": "~0.9",
-                "nette/caching": "~2.2",
-                "nette/di": "~2.3",
-                "nette/tester": "~1.4 != 1.6.1",
-                "tracy/tracy": "~2.3"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "2.0-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Nextras\\Dbal\\": "src/"
-                },
-                "classmap": [
-                    "src/exceptions.php"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Nextras Project",
-                    "homepage": "https://github.com/nextras/dbal/graphs/contributors"
-                }
-            ],
-            "description": "Nextras database abstraction layer",
-            "homepage": "https://github.com/nextras/dbal",
-            "keywords": [
-                "database",
-                "dbal",
-                "nextras"
-            ],
-            "time": "2016-01-24 20:17:20"
         },
         {
             "name": "tracy/tracy",

@@ -3,8 +3,8 @@
 namespace App\Model;
 
 use Nette\Object;
-use Nextras\Dbal\Result\Result;
-use Nextras\Dbal\Result\Row;
+use Dibi\Result;
+use Dibi\Row;
 
 
 class ArticleFactory extends Object

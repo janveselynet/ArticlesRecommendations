@@ -3,7 +3,7 @@
 namespace App\Model;
 
 use Nette\Object;
-use Nextras\Dbal\Connection;
+use Dibi\Connection;
 
 
 class Repository extends Object

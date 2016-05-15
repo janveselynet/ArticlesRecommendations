@@ -2,7 +2,7 @@
 
 namespace App\Model;
 
-use Nextras\Dbal\Result\Result;
+use Dibi\Result;
 
 
 class RatingRepository extends Repository
@@ -16,8 +16,13 @@ class RatingRepository extends Repository
 	{
 		$sqlIp = 'SELECT ip FROM rating WHERE article = %i';
 		$sqlUser = 'SELECT user FROM rating WHERE user <> -10 AND article = %i';
-		$sql = 'SELECT COUNT(id) as cnt, article FROM rating WHERE ip IN (' . $sqlIp . ') OR user IN (' . $sqlUser . ') GROUP BY article';
-		return $this->connection->query($sql, $article->getId(), $article->getId());
+		return $this->connection->query(
+			'SELECT COUNT(id) as cnt, article FROM rating WHERE ip IN (',
+			$sqlIp, $article->getId(),
+			') OR user IN (',
+			$sqlUser, $article->getId(),
+			') GROUP BY article'
+		);
 	}
 
 	/**

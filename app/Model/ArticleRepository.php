@@ -2,8 +2,7 @@
 
 namespace App\Model;
 
-
-use Nextras\Dbal\Connection;
+use Dibi\Connection;
 
 
 class ArticleRepository extends Repository
